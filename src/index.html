@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>Dickies</title>
+  </head>
+  <body class="bg-white">
+
+      <input type="checkbox" class="hidden" id="menuToggle" />
+      <ul class="flex m-5 justify-between items-center gap-5.">
+        <li class="md:hidden">
+          <label for="menuToggle" class=" p-4 cursor-pointer z-10 md:hidden">        
+          <img class="w-8 h-8 md:hidden" src="/img/menu_burger.png" alt="#" />
+          </label>
+        </li>
+        <li class="md:left-0"><img class="w-24 flex" src="/img/Dickies_logo.png" alt="#"></li>
+
+        <ul class="flex items-center gap-32">
+        
+        <li class="font-Oswald uppercase font-bold hidden md:block">Tennues de travail</li>   
+        <li class="font-Oswald uppercase font-bold hidden md:block">Uniformes</li>
+        <li class="font-Oswald uppercase font-bold hidden md:block">décontracté</li>
+        <li class="hidden md:block w-6 gap-1 items-center">
+          <ul class="flex items-center">
+          <img src="/img/loupe.svg" alt="loupe">
+          <input  placeholder="Rechercher" type="text">
+        </ul>
+        </li>
+        <li class="font-Oswald uppercase font-bold hidden items-center md:block">
+          <ul class="flex items-center">
+          <img class="w-8" src="/img/shopping-32.png" alt="shopping_icon">
+          <p>2</p>
+        </ul>
+        </li>
+        <li class="font-Oswald uppercase font-bold hidden md:block">Profil</li> 
+        <li class="md:hidden"><img class="w-10" src="/img/shopping_icon.png" alt="shop"></li>
+      </ul>
+    </ul>
+      <div
+        class="menu h-screen w-full bg-light-grey transform -translate-x-full transition-transform"
+      >
+        <ul class="text-2xl p-12 text-black">
+          <li class="mb-4"><a href="#">Tenu de travail</a></li>
+          <li class="mb-4"><a href="#">Combinaison</a></li>
+          <li class="mb-4"><a href="#">Décontracté</a></li>
+        </ul>
+      </div>
+
+      <footer class="flex flex-col items-center gap-3">
+
+        <h2 class="text-red font-bold text-grd4 text-center">Inscrit toi à notre newsletter !</h2>
+        <p class="text-center">Soyez le premier à connaître nos offres spéciales, nos nouvelles et nos mises à jour.</p>
+
+        <ul class="flex border-black max-w-max border-2 rounded-lg p-2">
+          <li><input class="" placeholder="Adresse mail" type="text"></li>
+          <li><p>S'abonner</p></li>
+        </ul>
+
+        <div class="flex w-full justify-center">
+          <p class="text-blue">Suivez nous !</p>
+          <ul class="flex w-28">
+            <li><img src="/img/facebook.png" alt="facebook"></li>
+            <li><img src="/img/twitter.png " alt="twitter"></li>
+            <li><img src="/img/google.png" alt="google"></li>
+            <li><img src="/img/instagram.png" alt="instagram"></li>
+          </ul>
+        </div>
+
+
+      </footer>
+
+  </body>
+
+  <script>
+    const menuToggle = document.getElementById("menuToggle");
+    const menu = document.querySelector(".menu");
+
+    menuToggle.addEventListener("change", () => {
+      if (menuToggle.checked) {
+        menu.classList.remove("-translate-x-full");
+      } else {
+        menu.classList.add("-translate-x-full");
+      }
+    });
+  </script>
+
+</html>
