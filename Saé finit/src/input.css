@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+
+    :root{
+        
+        --black:0deg 0% 0%;
+        --gray:0deg 0% 33%;
+        --red:0deg 100% 40%;
+        --blue:222deg 54% 48%;
+        --light-grey:0deg 0% 97%;
+        --green:78.8deg 31.3% 32%;
+        --brown:20.3deg 46.1% 32.7%;
+        --dark-blue: 216.2deg 100% 19.8%;
+        --button: 208deg 100% 20.2%;
+
+        --light: 300;
+        --bold:400;
+        --semi-bold:500;
+
+        --ff-oswald: 'Oswald', sans-serif;
+
+        --petit: .81rem;
+        --moyen: .93rem;
+        --grd: 1rem;
+        --grd2: 1.125rem;
+        --grd3: 1.5rem;
+        --grd4: 2rem;
+
+    }
+}
