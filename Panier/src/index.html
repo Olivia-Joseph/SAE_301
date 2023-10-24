@@ -61,55 +61,22 @@
 
     <img src="/img/arrow.png" alt="flèche back" class="p-3">
 
-    <section class="flex flex-col gap-5 justify-center items-center md:flex-row md:items-start md:gap-80">
-
-        <article class="flex flex-col gap-10 justify-center items-center">
-            <h1 class="font-Oswald font-bold text-2xl mr-72 md:mr-96">Vos infos</h1>
-
-            <ul class="flex flex-row gap-3 justify-center items-center">
-                <li class="font-bold">Info </li>
-                <li>----</li>
-                <li>Livraison</li>
-                <li>----</li>
-                <li>Paiement</li>
-            </ul>
-
-            <div class=" flex flex-wrap w-96 items-center justify-center gap-2">
-                <input type="text" id="Name" name="Name" placeholder="Prénom" required class="border border-black w-2/5 h-10 pl-2">
-                <input type="name" id="name" name="name" placeholder="Nom" required class="border border-black w-2/5 h-10 pl-2">
-                <input type="email" id="email" name="email" placeholder="Email" required class="border border-black w-4/5 h-10 pl-2">
-                <input type="text" id="+" name="+" placeholder="+" required class="border border-black w-1/5 h-10 pl-2">
-                <input type="text" id="number" name="number" placeholder="Numéro" required class="border border-black w-3/5 h-10 pl-2">
-            </div>
-
-            <ul class=" invisible collapse md:visible mt-5 flex flex-col gap-5 ">
-                <li>
-                    <h1 class="font-bold font-Oswald text-grd3">Information </h1>
-                    <hr>
-                </li>
-                <li>
-                    <h2 class="font-bold">Retours</h2>
-                    <p>Les retours sont autorisés pendant 30 jours après l'achat</p>
-                    <hr>
-                </li>
-                <li>
-                    <h2 class="font-bold">Livraison</h2>
-                    <p>Retrait en magasin seulement</p>
-                </li>
-
-            </ul>
-        </article>
+    <section class="flex flex-col gap-5 justify-center items-center">
 
 
-        <article class="flex flex-col gap-5 justify-center items-center">
-            <h1 class="font-Oswald font-bold text-2xl mr-64 mt-5 md:mt-0">Votre Commande</h1>
+        <article class="flex flex-col gap-5 justify-center items-center pb-10">
+
+            <h2 class="font-Oswald font-bold text-2xl mr-64 mt-5 md:mt-0">
+                Votre Panier
+            </h2>
+
             <div class="flex justify-center items-start gap-5">
                 <figure class="w-36 aspect-square overflow-hidden">
                     <img src="/img/pants.png" alt="">
                 </figure>
 
                 <div class="flex flex-col gap-2 pt-2">
-                    <h1 class="font-bold text-2xl">Pantalon Cargo</h1>
+                    <h2 class="font-bold text-2xl">Pantalon Cargo</h2>
                     <p>Taille : M</p>
                     <p class="font-bold text-xl">85€</p>
                     <ul class="flex flex-row gap-3 items-center">
@@ -121,36 +88,29 @@
                         </li>
                     </ul>
                 </div>
-
             </div>
 
-            <hr class="w-4/5 h-0.5 bg-black">
+            <div class="flex justify-center items-start gap-5">
+                <figure class="w-36 aspect-square overflow-hidden">
+                    <img src="/img/pants.png" alt="">
+                </figure>
 
-            <input type="text" id="code" name="code" placeholder="Code Promo" required class="border border-black w-4/5 h-10 pl-2 mt-5">
+                <div class="flex flex-col gap-2 pt-2">
+                    <h2 class="font-bold text-2xl">Pantalon Cargo</h2>
+                    <p>Taille : S</p>
+                    <p class="font-bold text-xl">85€</p>
+                    <ul class="flex flex-row gap-3 items-center">
+                        <li>
+                            <p>Quantité</p>
+                        </li>
+                        <li>
+                            <input type="number" name="" id="" class="border w-14 px-2">
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
-            <ul class=" flex flex-col w-4/5 gap-2 mt-5">
-                <li class="flex justify-between">
-                    <p>Sous-total</p>
-                    <p>85€</p>
-                </li>
-                <li class="flex justify-between">
-                    <p>Frais de Livraison</p>
-                    <p>Calculé à la prochaine étape</p>
-                </li>
-                <hr class="w-full h-0.5 bg-black">
-                <li class="flex justify-between">
-                    <p>Total</p>
-                    <p>85€</p>
-                </li>
-            </ul>
-
-
-            <a href="/src/livraison.html" class=" w-4/5 h-14 mt-5 mb-10" ">
-              <button class="bg-black text-white w-full h-14 mt-5 mb-10 ">Passer à la Livraison</button>
-          </a>
         </article>
-
-
 
     </section>
 
