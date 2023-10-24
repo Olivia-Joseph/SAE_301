@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="/dist/output.css" rel="stylesheet" />
+  <title>Produit SAE301</title>
+
+</head>
+
+<body class="overflow-x-hidden">
+  <input type="checkbox" class="hidden" id="menuToggle" />
+
+  <ul class="flex m-5 justify-between items-center gap-5 md:mb-24">
+    <li class="md:hidden">
+      <label for="menuToggle" class="p-4 cursor-pointer z-10 md:hidden">
+        <img class="w-8 h-8 md:hidden" src="/img/menu_burger.png" alt="#" />
+      </label>
+    </li>
+
+    <li class="md:left-0">
+      <img class="w-24 flex" src="/img/Dickies_logo.png" alt="#" />
+    </li>
+    <li class="font-Oswald uppercase font-bold hidden md:block">
+      <h3>Tenues de travail</h3>
+    </li>
+    <li class="font-Oswald uppercase font-bold hidden md:block">
+      <h3>Uniformes</h3>
+    </li>
+    <li class="font-Oswald uppercase font-bold hidden md:block">
+      <h3>Décontracté</h3>
+    </li>
+    <li class="hidden md:block w-6 gap-1 items-center">
+      <div class="flex items-center">
+        <img src="/img/loupe.svg" alt="loupe" />
+        <input placeholder="Rechercher" type="text" />
+      </div>
+    </li>
+    <li class="font-Oswald uppercase font-bold hidden items-center md:block">
+      <div class="flex items-center">
+        <img class="w-8 mr-2" src="/img/shopping-32.png" alt="shopping_icon" />
+        <h3>2</h3>
+      </div>
+    </li>
+    <li class="font-Oswald uppercase font-bold hidden md:block">
+      <h3>Profil</h3>
+    </li>
+
+    <li class="md:hidden">
+      <img class="w-10" src="/img/shopping_icon.png" alt="shop" />
+    </li>
+  </ul>
+
+  <section
+    class="menu hidden h-screen w-full bg-light-grey transform -translate-x-full transition-transform active:hidden md:hidden">
+    <ul class="text-2xl p-12 text-black">
+      <li class="mb-4"><a href="#">Tenue de travail</a></li>
+      <li class="mb-4"><a href="#">Combinaison</a></li>
+      <li class="mb-4"><a href="#">Décontracté</a></li>
+    </ul>
+
+  </section>
+  <section class="flex flex-row justify-between mr-5 mb-4 ml-5  md:hidden">
+    <img src="/img/Back-arrow.svg" alt="Retour">
+    <ul class="flex flex-row">
+    <img src="/img/Favorites-Icon.svg" alt="Favoris">
+    <img src="/img/Share.svg" alt="Partager">
+  </ul>
+  </section>
+  <h1 id="vesteTitle" class="ml-5 font-Oswald font-bold text-2xl lg:hidden ">Chemise Portland Rouge</h1>
+  <p class="mb-2 ml-5 lg:hidden">
+    Inventé en 1960 et resté inchangé depuis, l’iconique salopette pour homme s’est fait une place de choix auprès des
+    travailleurs.
+  </p>
+
+  <article class="flex flex-col justify-center md:flex-row md:gap-10 ">
+    <div class="image-gallery flex flex-col w-80 md:flex-row md:hidden lg:w-1/2 justify-center mb-2 ml-5" id="imageGallery">
+      <img id="vesteImage" src="/img/veste-rouge.png" alt="" class="max-w-full md:w-1/3 lg:w-1/2 p-2" />
+      <img id="vesteImage" src="/img/veste-rouge-dos.png" alt="" class="max-w-full md:w-1/3 lg:w-1/2 p-2" />
+      <img id="vesteImage" src="/img/veste-rouge-pose.png" alt="" class="max-w-full md:w-1/3 lg:w-1/2 p-2" />
+    </div>
+    <div class="md:flex md:flex-col hidden md:block">
+      <img src="/img/Product-Images-desktop.png" alt="">
+    </div>
+    <div class=" pt-2 pr-5 pb-5 pl-5 md:flex md:flex-col">
+      <div class="  md:flex md:flex-col hidden md:block">
+        <section class="flex flex-row items-center ">
+        <h1 id="vesteTitle" class=" mr-16 font-Oswald font-bold text-2xl">Chemise Portland Rouge</h1>
+        <img class=" md:flex md:flex-col hidden md:block" src="/img/Favorites-Icon.svg" alt="Favoris">
+        <img class=" md:flex md:flex-col hidden md:block" src="/img/Share.svg" alt="Partager">
+      </section>
+
+        <h2 class="mb-2 font-semibold font-Oswald text-grd4 text-grey tracking-wide md:flex md:flex-col hidden md:block">
+          85,00€
+        </h2>
+        <p class="mb-2 ">
+          Inventé en 1960 et resté inchangé depuis,<br> l’iconique salopette pour homme s’est fait une <br>place de choix auprès
+          des travailleurs.
+        </p>
+      </div>
+      <section>
+        <h3 class="pb-2 text-grey">Couleur</h3>
+        <ul class="flex flex-row gap-2 mb-2">
+
+          <li id="redSquare" class="w-8 h-8 lg:w-12 lg:h-12 bg-red border-2 border-black"></li>
+          <li id="brownSquare" class="w-8 h-8 lg:w-12 lg:h-12 bg-brown border-2 border-black"></li>
+          <li id="blueSquare" class="w-8 h-8 lg:w-12 lg:h-12 bg-dark-blue border-2 border-black"></li>
+          <li id="greenSquare" class="w-8 h-8 lg:w-12 lg:h-12 bg-green border-2 border-black"></li>
+        </ul>
+      </section>
+      <section class="pb-2">
+        <h3 class="pb-2 text-grey">Taille</h3>
+
+        <ul class="flex flex-row gap-4 mb-0.5">
+          <li>
+            <h3 id="sizeS" class="flex justify-center items-center w-9 h-9 lg:w-14 lg:h-14 border-2 border-black">
+              S
+            </h3>
+          </li>
+          <li>
+            <h3 id="sizeM" class="flex justify-center items-center w-9 h-9 lg:w-14 lg:h-14 border-2 border-black">
+              M
+            </h3>
+          </li>
+          <li class="mr-2 md:mr-20">
+            <h3 id="sizeL" class="flex justify-center items-center w-9 h-9 lg:w-14 lg:h-14 border-2 border-black">
+              L
+            </h3>
+          </li>
+          <li class="flex flex-row w-20 h-10 lg:w-28 lg:hidden lg:h-14 border-2 border-black">
+            <img id="subtractButton" class="w-10 lg:w-12" src="/img/Subtract.svg" alt="Soustraire" />
+            <h3 id="quantity" class="flex justify-center items-center text-grd2">1</h3>
+            <img id="addButton" class="w-10 lg:w-12" src="/img/Add.svg" alt="Ajouter" />
+          </li>
+        </ul>
+      </section>
+
+      <h2 class="mb-2 font-semibold font-Oswald text-grd2 tracking-wide lg:hidden">
+        85,00€
+      </h2>
+
+      <div id="soonUnavailable" class="flex text-red hidden mt-2">
+        <img src="/img/bientôt-indisponible.svg" alt="" />
+        <p>Il ne reste que 3 exemplaires</p>
+      </div>
+      <ul class="flex flex-row gap-5">
+        <li>
+          <a id="addToCartLink"
+            class="flex justify-center mb-2 pt-3 pr-8 pb-3 pl-8 bg-button font-Oswald text-grd3 text-white md:pr-16 md:pl-16"
+            href="#">Ajouter au panier</a>
+        </li>
+        <li class="flex flex-row w-20 h-10 lg:w-28 lg:h-14 border-2 border-black md:flex md:flex-row hidden md:block">
+          <img id="subtractButton" class="w-10 lg:w-12 " src="/img/Subtract.svg" alt="Soustraire" />
+          <h3 id="quantity" class=" justify-center items-center text-grd2 md:flex md:flex-col hidden md:block">1</h3>
+          <img id="addButton" class="w-10 lg:w-12 " src="/img/Add.svg" alt="Ajouter" />
+        </li>
+      </ul>
+      </ul>
+      <section class="flex flex-row gap-4">
+        <h3 class="text-grey">Frais de livraison gratuit</h3>
+        <h3 class="text-grey underline">Retour gratuit</h3>
+      </section>
+    </div>
+  </article>
+  </div>
+ 
+</body>
+<script>
+
+  const menuToggle = document.getElementById("menuToggle");
+  const menu = document.querySelector(".menu");
+
+  menuToggle.addEventListener("change", () => {
+    if (menuToggle.checked) {
+      menu.classList.remove("-translate-x-full");
+      menu.style.display = "block";
+    } else {
+      menu.classList.add("-translate-x-full");
+      menu.style.display = "none";
+    }
+  });
+
+  let vesteImage = document.getElementById("vesteImage");
+  let redSquare = document.getElementById("redSquare");
+  let brownSquare = document.getElementById("brownSquare");
+  let blueSquare = document.getElementById("blueSquare");
+  let greenSquare = document.getElementById("greenSquare");
+  let vesteTitle = document.getElementById("vesteTitle");
+  let colorToTitle = {
+    "red": "Chemise Portland Rouge",
+    "brown": "Chemise Portland Marron",
+    "blue": "Chemise Portland Bleue",
+    "green": "Chemise Portland Verte"
+  };
+
+  let sizeS = document.getElementById("sizeS");
+  let sizeM = document.getElementById("sizeM");
+  let sizeL = document.getElementById("sizeL");
+
+  sizeS.addEventListener("click", function () {
+    sizeS.style.opacity = 1;
+    sizeM.style.opacity = 0.5;
+    sizeL.style.opacity = 0.5;
+  });
+
+  sizeM.addEventListener("click", function () {
+    sizeM.style.opacity = 1;
+    sizeS.style.opacity = 0.5;
+    sizeL.style.opacity = 0.5;
+  });
+
+  sizeL.addEventListener("click", function () {
+    sizeL.style.opacity = 1;
+    sizeS.style.opacity = 0.5;
+    sizeM.style.opacity = 0.5;
+  });
+
+  let addButton = document.getElementById("addButton");
+  let subtractButton = document.getElementById("subtractButton");
+  let quantity = document.getElementById("quantity");
+
+  let count = 1;
+
+  addButton.addEventListener("click", function () {
+    if (count < 9) {
+      // Bloquez la quantité à 3 si la couleur marron est sélectionnée
+      if (isBrownSelected && count >= 3) {
+        return;
+      }
+
+      count++;
+      quantity.textContent = count;
+    }
+  });
+
+  subtractButton.addEventListener("click", function () {
+    if (count > 1) {
+      count--;
+      quantity.textContent = count;
+    }
+  });
+
+  let addToCartButton = document.querySelector(".bg-button");
+
+  blueSquare.addEventListener("click", function () {
+    vesteImage.src = "/img/veste-bleu.png";
+    addToCartButton.classList.remove("bg-button");
+    addToCartButton.classList.add("bg-gray-300");
+    addToCartButton.style.color = "#333";
+    addToCartButton.textContent = "Indisponible";
+    soonUnavailable.style.display = "none";
+    vesteTitle.textContent = colorToTitle["blue"];
+
+  });
+
+
+  redSquare.addEventListener("click", function () {
+    vesteImage.src = "/img/veste-rouge.png";
+    addToCartButton.classList.remove("bg-gray-300");
+    addToCartButton.classList.add("bg-button");
+    addToCartButton.style.color = "#fff";
+    addToCartButton.textContent = "Ajouter au panier";
+
+    soonUnavailable.style.display = "none";
+    vesteTitle.textContent = colorToTitle["red"];
+  });
+
+  brownSquare.addEventListener("click", function () {
+    vesteImage.src = "/img/veste-marron.png";
+    addToCartButton.classList.remove("bg-gray-300");
+    addToCartButton.classList.add("bg-button");
+    addToCartButton.style.color = "#fff";
+    addToCartButton.textContent = "Ajouter au panier";
+
+
+    soonUnavailable.style.display = "block";
+    vesteTitle.textContent = colorToTitle["brown"];
+  });
+
+  greenSquare.addEventListener("click", function () {
+    vesteImage.src = "/img/veste-verte.png";
+    addToCartButton.classList.remove("bg-gray-300");
+    addToCartButton.classList.add("bg-button");
+    addToCartButton.style.color = "#fff";
+    addToCartButton.textContent = "Ajouter au panier";
+
+
+    soonUnavailable.style.display = "none";
+    vesteTitle.textContent = colorToTitle["green"];
+
+  });
+
+  let isBrownSelected = false;
+  brownSquare.addEventListener("click", function () {
+    isBrownSelected = true;
+    vesteTitle.textContent = colorToTitle["brown"];
+  });
+  let imageGallery = document.getElementById("imageGallery");
+
+  let startX;
+  let currentX;
+
+  imageGallery.addEventListener("touchstart", (e) => {
+    startX = e.touches[0].clientX;
+    currentX = startX;
+  });
+
+  imageGallery.addEventListener("touchmove", (e) => {
+    currentX = e.touches[0].clientX;
+  });
+
+  imageGallery.addEventListener("touchend", () => {
+    const deltaX = startX - currentX;
+    if (deltaX > 50) {
+      // Swipe vers la gauche, affiche la prochaine image
+      showNextImage();
+    } else if (deltaX < -50) {
+      // Swipe vers la droite, affiche l'image précédente
+      showPreviousImage();
+    }
+  });
+
+  let currentImageIndex = 0;
+
+  function showNextImage() {
+    currentImageIndex = (currentImageIndex + 1) % imageGallery.children.length;
+    updateDisplayedImage();
+  }
+
+  function showPreviousImage() {
+    currentImageIndex =
+      (currentImageIndex - 1 + imageGallery.children.length) %
+      imageGallery.children.length;
+    updateDisplayedImage();
+  }
+
+  function updateDisplayedImage() {
+    for (let i = 0; i < imageGallery.children.length; i++) {
+      imageGallery.children[i].style.display = "none";
+    }
+    imageGallery.children[currentImageIndex].style.display = "block";
+  }
+
+  updateDisplayedImage();
+</script>
+</script>
+
+</html>
