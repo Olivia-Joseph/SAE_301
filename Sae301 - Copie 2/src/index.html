@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>Dickies</title>
+</head>
+
+<body>
+    <input type="checkbox" class="hidden" id="menuToggle" />
+
+    <ul class="flex m-5 justify-between items-center gap-5">
+        <li class="md:hidden">
+            <label for="menuToggle" class="p-4 cursor-pointer z-10 md:hidden">
+          <img class="w-8 h-8 md:hidden" src="/img/menu_burger.png" alt="#" />
+        </label>
+        </li>
+
+        <li class="md:left-0">
+            <img class="w-24 flex" src="/img/Dickies_logo.png" alt="#" />
+        </li>
+        <li class="font-Oswald uppercase font-bold hidden md:block">
+            <h3>Tenues de travail</h3>
+        </li>
+        <li class="font-Oswald uppercase font-bold hidden md:block">
+            <h3>Uniformes</h3>
+        </li>
+        <li class="font-Oswald uppercase font-bold hidden md:block">
+            <h3>Décontracté</h3>
+        </li>
+        <li class="hidden md:block w-6 gap-1 items-center">
+            <div class="flex items-center">
+                <img src="/img/loupe.svg" alt="loupe" />
+                <input placeholder="Rechercher" type="text" />
+            </div>
+        </li>
+        <li class="font-Oswald uppercase font-bold hidden items-center md:block">
+            <div class="flex items-center">
+                <img class="w-8 mr-2" src="/img/shopping-32.png" alt="shopping_icon" />
+                <h3>2</h3>
+            </div>
+        </li>
+        <li class="font-Oswald uppercase font-bold hidden md:block">
+            <h3>Profil</h3>
+        </li>
+
+        <li class="md:hidden">
+            <img class="w-10" src="/img/shopping_icon.png" alt="shop" />
+        </li>
+    </ul>
+
+    <section class="menu hidden h-screen w-full bg-light-grey transform -translate-x-full transition-transform active:hidden md:hidden">
+        <ul class="text-2xl p-12 text-black">
+            <li class="mb-4"><a href="#">Tenue de travail</a></li>
+            <li class="mb-4"><a href="#">Combinaison</a></li>
+            <li class="mb-4"><a href="#">Décontracté</a></li>
+        </ul>
+    </section>
+
+    <img src="/img/arrow.png" alt="flèche back" class="p-3">
+
+    <section class="flex flex-col gap-5 justify-center items-center">
+
+        <article class="flex flex-col gap-5 md:flex-row md:gap-80">
+            <div class="flex font-Oswald gap-4 items-center justify-center">
+                <figure class=" w-32 rounded-full overflow-hidden aspect-square">
+                    <img src="https://picsum.photos/200" alt="">
+                </figure>
+
+                <ul>
+                    <li>
+                        <h2 class="text-grd3 text-blue">
+                            Jean Bondon
+                        </h2>
+                    </li>
+                    <li>
+                        <p>
+                            Membre depuis le 13/10/2019
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            22/01/1999
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            jean.bdn@gmail.fr
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="flex font-Oswald items-center justify-center gap-3 text-grd3 md:flex-col">
+                <img src="/img/Barcode.png" alt="">
+                <h1>0226 7843 5973 FRAO</h1>
+            </div>
+        </article>
+
+        <article class=" flex flex-col w-4/5 gap-3 pb-10">
+            <div>
+                <h1 class="font-Oswald text-grd3">
+                    Mon Profil
+                </h1>
+            </div>
+
+            <div class=" flex flex-col">
+                <h1 class="font-Oswald text-grd3">
+                    Historique des commandes
+                </h1>
+
+                <ul class="  w-full bg-lightgrey px-2 rounded-lg">
+                    <li class="flex justify-between items-center font-bold h-14">
+                        <p>N°</p>
+                        <p>PRÉNOM</p>
+                        <p>DATE</p>
+                        <p>STATUT</p>
+                    </li>
+
+                    <hr>
+
+                    <li class="flex justify-between items-center h-14">
+                        <p>260</p>
+                        <p>Jean</p>
+                        <p>15/10/23</p>
+                        <p class="text-yellow-500">En cours</p>
+                    </li>
+
+                    <hr>
+
+                    <li class="flex justify-between items-center h-14">
+                        <p>254</p>
+                        <p>Jean</p>
+                        <p>11/09/23</p>
+                        <p>Dispo.</p>
+                    </li>
+
+                    <hr>
+
+                    <li class="flex justify-between items-center h-14">
+                        <p>222</p>
+                        <p>Jean</p>
+                        <p>22/07/23</p>
+                        <p class="text-red">Supp.</p>
+                    </li>
+
+                    <hr>
+
+                    <li class="flex justify-between items-center h-14">
+                        <p>300</p>
+                        <p>Jean</p>
+                        <p>19/11/22</p>
+                        <p class="text-green">Retirée</p>
+                    </li>
+
+                    <hr>
+
+                    <li class="flex justify-between items-center h-14">
+                        <p>300</p>
+                        <p>Jean</p>
+                        <p>14/06/21</p>
+                        <p class="text-green">Retirée</p>
+                    </li>
+
+
+            </div>
+
+            <div>
+                <h1 class="font-Oswald text-grd3">
+                    Mes Favoris
+                </h1>
+            </div>
+
+            <div>
+                <h1 class="font-Oswald text-grd3">
+                    Mes Avantages
+                </h1>
+            </div>
+
+            <div>
+                <h1 class="font-Oswald text-grd3">
+                    Aide
+                </h1>
+            </div>
+
+        </article>
+
+
+    </section>
+
+    <hr class="w-full h-0.5 bg-black ">
+
+    <article class="flex flex-col items-center gap-3 md:flex-row md:justify-between md:mx-24 ">
+        <section class="flex flex-col items-center md:items-start ">
+            <h2 class="text-red font-bold text-grd4 text-center ">
+                Inscrit toi à notre newsletter !
+            </h2>
+            <p class="text-center md:text-start ">
+                Soyez le premier à connaître nos offres spéciales, nos nouvelles et nos mises à jour.
+            </p>
+            <ul class="flex border-black max-w-max border-2 rounded-lg p-2 ">
+                <li><input placeholder="Adresse mail " type="text " /></li>
+                <li>
+                    <p>S'abonner</p>
+                </li>
+            </ul>
+        </section>
+        <div class="flex max-w-max justify-center items-center gap-20 md:flex-col md:gap-3 ">
+            <p class="text-blue text-grd3 ">Suivez nous !</p>
+            <ul class="flex w-28 md:flex-col md:w-6 ">
+                <li><img src="/img/facebook.png " alt="facebook " /></li>
+                <li><img src="/img/twitter.png " alt="twitter " /></li>
+                <li><img src="/img/google.png " alt="google " /></li>
+                <li><img src="/img/instagram.png " alt="instagram " /></li>
+            </ul>
+        </div>
+        <div class="flex justify-center gap-20 mx-5 ">
+            <ul>
+                <li>
+                    <p class="text-blue ">Service client</p>
+                </li>
+                <li>
+                    <p>FAQ</p>
+                    <p>Contact</p>
+                    <p>Coupons et promotions</p>
+                    <p>Conditions d'utilisation</p>
+                    <p>Expédition et livraison</p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <p class="text-blue ">Information</p>
+                </li>
+                <li>
+                    <p>À propos de Dickies</p>
+                    <p>Confidentialité</p>
+                    <p>Conditions d'utilisation</p>
+                    <p>Loi sur les chaînes d'approvisionnement de l'AC</p>
+                    <p>Sites internationaux</p>
+                </li>
+            </ul>
+        </div>
+    </article>
+
+    <footer>
+        <ul class="bg-black text-white text-center p-2 md:w-full md:flex md:justify-between ">
+            <li>©2023 W-D Apparel Company, LLC Quality Workwear Since 1922</li>
+            <li>
+                Accessibility Statement | Privacy | Conditions of Use | Site Map
+            </li>
+        </ul>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById("menuToggle ");
+        const menu = document.querySelector(".menu ");
+
+        menuToggle.addEventListener("change ", () => {
+            if (menuToggle.checked) {
+                menu.classList.remove("-translate-x-full ");
+                menu.style.display = "block ";
+            } else {
+                menu.classList.add("-translate-x-full ");
+                menu.style.display = "none ";
+            }
+        });
+
+        const dropdownTrigger = document.getElementById("dropdownTrigger ");
+        const dropdownMenu = document.getElementById("dropdownMenu ");
+
+        dropdownTrigger.addEventListener("click ", () => {
+            if (dropdownMenu.classList.contains("hidden ")) {
+                dropdownMenu.classList.remove("hidden ");
+            } else {
+                dropdownMenu.classList.add("hidden ");
+            }
+        });
+
+        const menuOptions = dropdownMenu.querySelectorAll("li[data-value] ");
+
+        menuOptions.forEach((option) => {
+            option.addEventListener("click ", () => {
+                dropdownTrigger.textContent = option.textContent;
+                dropdownMenu.classList.add("hidden ");
+            });
+        });
+    </script>
+</body>
+
+</html>
